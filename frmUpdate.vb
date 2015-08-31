@@ -67,6 +67,9 @@ Public Class frmUpdate
                     lbNewVersion.ForeColor = Color.Green
                     If detailLink <> "" Then btnDe.Enabled = True
                     If downloadLink <> "" Then btnDl.Enabled = True
+                Else
+                    lbNewVersion.Text = "当前已是最新版本"
+                    lbNewVersion.ForeColor = Color.Green
                 End If
             End If
         Catch ex As Exception
